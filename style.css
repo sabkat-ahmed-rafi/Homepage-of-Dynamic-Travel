@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
-body header,main {
+body header {
     margin: 0px 100px;
 }
 /* header section is implemented here */
@@ -137,4 +137,112 @@ body header,main {
         padding: 0px;
         font-size: small;
     }
+}
+/* popular section is implemented here  */
+.popular-section {
+    margin: 0px 100px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5A5A5D;
+    margin-bottom: 100px;
+}
+.popular-text h1 {
+    font-weight: 900;
+    margin-bottom: 26px;
+    color: #131318;
+}
+.popular-text p {
+    margin-top: 30px;
+}
+.popular-text {
+    width: 50%;
+}.popular-text ul li {
+    margin-top: 25px;
+}
+.popular-button button {
+    margin-top: 20px;
+    padding: 8px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF5400;
+    color: white;
+    cursor: pointer;
+    transition: padding 95ms linear, font-size 95ms linear;
+}
+.popular-button button:hover {
+    padding: 10px 24px;
+    font-size: 15px;
+}
+.popular-image img {
+    width: 100%;
+}
+/* setting responsiveness of popular section for small device  */
+
+@media screen and (max-width: 576px) {
+    .popular-section {
+        flex-direction: column;
+        margin: 0px 15px;
+        margin-top: 100px;
+    }
+    .popular-text {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+}
+/* grid text and image section is implemented here  */
+.grid-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.grid-text h1 {
+    color: #131318;
+    font-weight: 900;
+}
+.grid-text p {
+    padding-top: 20px;
+    color: #131318B2;
+}
+.grid-image {
+    margin: 0px 70px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.grid-image div {
+    position: relative;
+}
+.grid-image div img {
+    width: 100%;
+}
+.grid-name {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    font-size: 25px;
+}
+/* setting responsiveness of grid text and image section for small device  */
+
+@media screen and (max-width: 576px) {
+    .grid-text {
+        margin-top: 40px;
+    }
+}
+/* choose us section is implemented here */
+.choose-us-text {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.choose-us-text h1 {
+    color: #131318;
+}
+.choose-us-text p {
+    padding-top: 15px;
+    color: #131318B2;
 }
