@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage of Dynamic Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    <!-- header section is implemented here  -->
     <header>
+        <div class="navbar-section">
 
+            <div class="navbar-logo">
+                <img src="Images/Group 40071 (2).png" alt="">
+                <h1>Dynamic <span>Travel</span></h1>
+                <span><img class="hamberger-menu-icon" src="icons/menu.svg" alt=""></span>
+            </div>
+            
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href=""><span>Home</span></a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- search section is implemented here  -->
+        <div class="search-section">
+            <div class="search-text">
+                <h1>Explore Your Travel</h1>
+                <p>Embark on unforgettable journeys with our travel agency. Discover new horizons, create lasting memories, and let us guide you to extraordinary destinations around the globe</p>
+            </div>
+        <div class="search-options">
+            <div><input class="size-of-search" type="text" placeholder="Where go"></div>
+            <div><select class="size-of-search" aria-placeholder="When" name="when" id="when" >
+                <option value="" disabled selected>When</option>
+                <option value="">19 January</option>
+                <option value=""> 20 January</option>
+                <option value="">21 January</option>
+                <option value="">22 January</option>
+            </select></div>
+            <div><select class="size-of-search" aria-placeholder="Select Type" name="type" id="type">
+                <option value="" disabled selected>Select Type</option>
+                <option value="">VIP</option>
+                <option value="">Classic</option>
+                <option value="">Regular</option>
+            </select></div>
+            <div class="button"><button class=""><img src="icons/search.svg" alt=""><p> Find Now</p></button></div>
+        </div>
+
+        </div>
     </header>
     <main>
 

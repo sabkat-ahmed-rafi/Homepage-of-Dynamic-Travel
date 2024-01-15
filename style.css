@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+body header,main {
+    margin: 0px 100px;
+}
+/* header section is implemented here */
+
+.navbar-section {
+    margin-bottom: 80px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamberger-menu-icon {
+    display: none;
+} 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar-logo h1:hover {
+    color: rgb(12, 121, 245);
+}
+.navbar-logo h1 {
+    padding-left: 20px;
+    color: #131318;
+}
+.navbar-logo h1 span {
+    color: #FF5400;
+}
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+}
+.navbar-menu ul a {
+    color: #424247;
+    text-decoration: none;
+    padding:0px 18px;
+    transition: font-size 80ms linear, font-weight 80ms linear;
+}
+.navbar-menu ul  a:hover {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+.navbar-menu ul a span {
+    color: #ff5400;
+}
+/* search section is implemented here */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 425px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+    border-radius: 16px;
+}
+.search-text {
+    text-align: center;
+}
+.search-text h1 {
+    font-size: 55px;
+    margin-bottom: 50px;
+    color: white;
+}
+.search-text p {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.search-options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+}
+.search-options .button button {
+   background-color: #ff5400;
+   color: white;
+   display: flex;
+   border: none;
+   align-items: center;
+   justify-content: space-evenly;
+   cursor: pointer;
+}
+.size-of-search,.search-options .button button {
+   width: 140px;
+   height: 35px;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 5px;
+}
+/* setting resposiveness of header section for small device */
+
+@media screen and (max-width: 576px) {
+    .navbar-section {
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-left: 83px;
+    }
+    body header, main {
+        margin: 0px 5px;
+    }
+    .navbar-menu ul  a{
+        font-size: smaller;
+        padding: 0px 8px;
+    }
+    .navbar-menu ul {
+        margin-top: 15px;
+    }
+    .search-section {
+        width: 100%;
+    }
+    .search-options {
+        flex-direction: column;
+        width: 35%;
+        height: 200px;
+        padding-bottom: 30px 40px;
+    }
+    .search-text h1 {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .search-text p {
+        padding: 0px;
+        font-size: small;
+    }
+}
