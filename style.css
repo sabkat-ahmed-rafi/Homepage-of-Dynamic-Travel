@@ -96,7 +96,7 @@ body header {
    cursor: pointer;
 }
 .size-of-search,.search-options .button button {
-   width: 140px;
+   width: 151px;
    height: 35px;
    padding: 5px 10px;
    border: none;
@@ -233,6 +233,9 @@ body header {
     .grid-text {
         margin-top: 40px;
     }
+    .grid-image {
+        margin: 0px 15px;
+    }
 }
 /* choose us section is implemented here */
 .choose-us-text {
@@ -245,4 +248,182 @@ body header {
 .choose-us-text p {
     padding-top: 15px;
     color: #131318B2;
+}
+.choose-us-carts {
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 100px;
+}
+.hotel {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.map {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.price {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+}
+.choose-us-carts h2 {
+    padding: 15px 0px;
+    font-weight: 800;
+}
+/* setting responsiveness of choose us cart section for small device  */
+
+@media screen and (max-width: 576px) {
+    .choose-us-carts {
+        display: flex;
+        flex-direction: column;
+    }
+    .price {
+        position: relative;
+        left: 0%;
+    }
+    .choose-us-carts {
+        margin: 0px 10px;
+    }
+}
+/* newsletter-seection is implemented here  */
+.newsletter-section {
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.newsletter-subscribe-secton {
+    border: 1px solid #FF5400;
+    width: 25%;
+    padding: 20px;
+    height: auto;
+    border-radius: 8px;
+}
+.newsletter-subscribe-secton .space-of-newsletter {
+    margin-top: 19px;
+}
+.newsletter-subscribe-secton h2 p hr {
+    background: rgba(19, 19, 24, 0.10);
+}
+.newsletter-subscribe-secton h2 {
+    color: #131318;
+    font-weight: 800;
+    color: #131318;
+}
+.newsletter-subscribe-secton p {
+    color: #5A5A5D;
+}
+.newsletter-subscribe-secton div input {
+    width: 244px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-subscribe-secton button {
+    width: 244px;
+    height: 25px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF5400;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.newsletter-image-section {
+    position: relative;
+}
+.save {
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    width: 25%;
+    padding: 5px 0px ;
+    padding-bottom: 19px;
+    color: white;
+    background-color: #FF5400;
+    position: absolute;
+    bottom: 45px;
+    right: 4px;
+    transform: rotate(-35deg);
+    cursor: pointer;
+}
+/* setting responsiveness of newsletter section for mobile  */
+
+@media screen and (max-width: 576px) {
+    .newsletter-section {
+        flex-direction: column;
+        margin: 100px 10px;
+    }
+    .newsletter-image-section div img {
+        width: 100%;
+    }
+    .save {
+        right: 0px;
+        bottom: 55px;
+        width: 45%;
+    }
+    .newsletter-subscribe-secton {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+/* footer section is implemented here  */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo h1 {
+    margin-left: 15px;
+}
+.footer-logo h1 span {
+    color: #FF5400;
+}
+footer p {
+    text-align: center;
+    color: #5A5A5D;
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+.footer-icons img {
+    padding: 0px 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: width 95ms ease;
+}
+.footer-icons  img:hover {
+    width: 80px;
+}
+footer .space-footer {
+    padding: 20px;
 }
